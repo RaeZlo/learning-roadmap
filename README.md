@@ -36,13 +36,6 @@ A lo largo del roadmap, se estudiarán y aplicarán temas como:
 - **Buenas prácticas**
 - **Resolución de problemas**
 
-## Progreso
-
-| Lenguaje | Retos completados |
-|----------|-------------------|
-| Python   | 0                 |
-| Java     | 0                 |
-
 ## Referencias
 
 - [Repositorio original del roadmap](https://github.com/mouredev/roadmap-retos-programacion)
