@@ -102,3 +102,34 @@ print(global_var)  # Acceso a la variable global
 # print(local_var)  # Esto daría un error, ya que no puede acceder a la variable local fuera de la función
 
 hello_python()
+
+"""
+Extra
+"""
+
+def fizzbuzz(parametro1: str, parametro2: str) -> int:
+    """
+    Imprime números del 1 al 100, pero sustituye:
+    - Múltiplos de 3 por el primer parámetro.
+    - Múltiplos de 5 por el segundo parámetro.
+    - Múltiplos de 3 y 5 por la concatenación de ambos.
+    Retorna la cantidad de veces que se imprimió el número en lugar de los textos.
+    """
+    count = 0  # Contador de números impresos
+
+    for number in range(1, 101):
+        if number % 3 == 0 and number % 5 == 0:
+            print(parametro1 + parametro2)
+        elif number % 3 == 0:
+            print(parametro1) 
+        elif number % 5 == 0:
+            print(parametro2) 
+        else:
+            print(number)  # Imprime el número
+            count += 1  # Incrementa el contador
+
+    return count  # Devuelve el total de números impresos
+
+# Ejecución de la función
+resultado = fizzbuzz("Fizz", "Buzz")
+print(f"\nTotal de números impresos en lugar de textos: {resultado}")
